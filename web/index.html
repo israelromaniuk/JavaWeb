@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css" type="text/css"/>
+
+        <title>Menu</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- CSS do Bootstrap -->
+        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+        <!-- Biblioteca jQuery-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+        <!-- JavaScript do Bootstrap -->
+        <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    </head>
+
+    <body> 
+        <div class="container">
+            <form class="form" action="Servlet" method="post" >
+                <h1>Insert in table<small>Inserir na tabela</small></h1>
+                <div>
+                    <input name="nome" type="text" class="form-control" placeholder="name of the product">
+                </div>
+                <div>
+                    <input name="descricao" type="text" class="form-control" placeholder="description of the product">
+                </div>
+                <div>
+                    <input name="preco" type="text" class="form-control" placeholder="U$ 00,00">
+                </div>
+                <div>
+                    <button name="btnCadastrar" type="submit" class="btn btn-default">Insert in table</button>
+                </div>
+            </form>
+        </div>
+    </body>
+</html>
