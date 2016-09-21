@@ -1,8 +1,9 @@
-
 package br.com.alldirect.model;
 
 public class ModelProduct {
 
+    String nome, descricao;
+    double preco;
     int id;
 
     public int getId() {
@@ -12,8 +13,6 @@ public class ModelProduct {
     public void setId(int id) {
         this.id = id;
     }
-    String nome, descricao;
-    double preco;
 
     public String getNome() {
         return nome;
