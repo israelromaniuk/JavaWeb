@@ -2,7 +2,16 @@
 package br.com.alldirect.model;
 
 public class ModelProduct {
-    
+
+    int id;
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
     String nome, descricao;
     double preco;
 
@@ -29,6 +38,5 @@ public class ModelProduct {
     public void setPreco(double preco) {
         this.preco = preco;
     }
-    
-    
+
 }

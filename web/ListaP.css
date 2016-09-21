@@ -1,0 +1,31 @@
+body{
+    font-family: Verdana;
+    font-size: 20px;	
+}
+
+table{
+    margin-right:auto;
+    margin-left:auto;
+    color: #2F4F4F;
+}
+td{
+    background-color: #d7d7d7;
+    width: 280px;
+}
+
+.alinhaCentro{
+    text-align: center;
+    background-color: #2F4F4F;
+    color: white;
+}
+
+.alinhaEsquerda{
+    text-align: right;
+}
+
+.codigo{
+    text-align: center;
+    background-color: #2F4F4F;
+    color: white;
+    width: 100px;
+}
