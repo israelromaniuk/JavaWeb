@@ -13,7 +13,7 @@ public class ConnectionFactory {
 
         try {
             Class.forName("com.mysql.jdbc.Driver");
-            String url = ("jdbc:mysql://192.68.0.200/estoque");
+            String url = ("jdbc:mysql://192.68.0.200/biblioteca");
             String user = ("aluno");
             String psw = ("123456");
             connection = DriverManager.getConnection(url, user, psw);

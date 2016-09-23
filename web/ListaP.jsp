@@ -8,7 +8,6 @@
 <%@page import="java.util.List"%>
 <%@page import="br.com.alldirect.dao.ControllerProduct"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
-<link rel="stylesheet" type="text/css" href="ListaP.css">
 <!-- CSS do Bootstrap -->
 <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
@@ -24,13 +23,13 @@
         <title>Lista de Produtos</title>
     </head>
     <body>
-        <div>
+        <div class="container">
             <table class="table table-bordered">
                 <tr>
-                    <td class="codigo">Código</td>
-                    <td class="alinhaCentro">Nome</td>
-                    <td class="alinhaCentro">Descrição</td>
-                    <td class="alinhaCentro">Preço</td>
+                    <td>Código</td>
+                    <td>Nome</td>
+                    <td>Descrição</td>
+                    <td>Preço</td>
                 </tr>
                 <%
                     ControllerProduct controllerProduct = new ControllerProduct();
@@ -39,15 +38,15 @@
                     for (ModelProduct p : produtos) {
                 %>
                 <tr>
-                    <td class="codigo"><%=p.getId()%></td>
+                    <td><%=p.getId()%></td>
                     <td><%=p.getNome()%> -</td>
                     <td><%=p.getDescricao()%></td>
-                    <td class="alinhaEsquerda"><%=p.getPreco()%></td>
+                    <td><%=p.getPreco()%></td>
                 </tr>
                 <%}%>
             </table>
         </div>
-        <div>
+        <div class="container">
             <a class="btn btn-default" href="http://localhost:49492/JavaWeb/" role="button">Back</a>
         </div>
     </body>

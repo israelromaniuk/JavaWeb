@@ -20,7 +20,6 @@ public class ControllerProduct {
     public void cadastraProduto(ModelProduct produto) throws SQLException {
         String sql = "INSERT INTO PRODUTOS(NOME, DESCRICAO, PRECO) VALUES(?,?,?)";
         try (PreparedStatement stmt = connection.prepareStatement(sql)) {
-            stmt.setInt(0, produto.getId());
             stmt.setString(1, produto.getNome());
             stmt.setString(2, produto.getDescricao());
             stmt.setDouble(3, produto.getPreco());
@@ -37,7 +36,6 @@ public class ControllerProduct {
             ResultSet resultSet = stmt.executeQuery();
             while (resultSet.next()) {
                 ModelProduct produto = new ModelProduct();
-                produto.setId(resultSet.getInt("id"));
                 produto.setNome(resultSet.getString("nome"));
                 produto.setDescricao(resultSet.getString("descricao"));
                 produto.setPreco(resultSet.getDouble("preco"));
